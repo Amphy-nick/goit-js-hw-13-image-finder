@@ -1,0 +1,13 @@
+.stats {
+    background-color: rgb(196, 250, 196);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.stats-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

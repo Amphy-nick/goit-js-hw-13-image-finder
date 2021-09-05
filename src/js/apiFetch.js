@@ -8,15 +8,14 @@ constructor(){
 }
 
 fetchArticles(){
-console.log(this)
-    
+
 const url = `${BASE_URL}${KEY}&q=${this.searchQuery}&
-image_type=photo&per_page=5&page=${this.page}`
+image_type=photo&per_page=12&page=${this.page}`
 
 return fetch(url)
 .then(response => response.json())
 .then(({hits}) => {
-console.log(hits)
+
     this.incrementPage();
 
     return hits;
