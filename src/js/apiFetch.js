@@ -19,7 +19,7 @@ return fetch(url)
     this.incrementPage();
 
     return hits;
-})
+}).catch(err => console.log(err))
 }
 
 incrementPage() {

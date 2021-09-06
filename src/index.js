@@ -39,7 +39,7 @@ function onLoadMore() {
     block: "start",
     behavior: "smooth"
 });
-    })
+    }).catch(err => console.log(err))
 };
 
 function appendHitsMarkup(hits) {
